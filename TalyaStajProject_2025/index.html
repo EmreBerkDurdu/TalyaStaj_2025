@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoş Geldiniz | Talya Staj Projesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    </div>
+    <div class="welcome-container">
+        <div class="welcome-icon">&#9775;</div>
+        <h1 id="typewriter"></h1>
+        <h2>Talya Staj Projesi</h2>
+        <p>SPA rezervasyon sistemi</p>
+        <div class="button-group">
+            <a href="https://github.com/EmreBerkDurdu/TalyaStaj_2025" class="github-btn" target="_blank" rel="noopener noreferrer">➡️ GitHub Repo</a>
+        </div>
+        <div class="tech-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Supabase</span>
+        </div>
+        <h3> Hazırlayan: Emre Berk Durdu</h3>
+        <footer>
+            © 2025 Talya Staj Projesi - Tüm hakları saklıdır.
+        </footer>
+    </div>
+    <script>
+const başlık = "Hoş Geldiniz!";
+let i = 0;
+const hiz = 120;
+function typeWriter() {
+    if (i < başlık .length) {
+        document.getElementById("typewriter").innerHTML += başlık.charAt(i);
+        i++;
+        setTimeout(typeWriter, hiz);
+    }
+}
+window.onload = typeWriter;
+</script>
+</body>
+</html> 
