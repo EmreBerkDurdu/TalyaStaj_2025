@@ -144,7 +144,7 @@ footer {
 } 
 
 @media (max-width: 600px) {
-  body {
+  .demo-body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -182,7 +182,7 @@ footer {
     width: 100%;
     padding: 16px 0;
   }
-  h2 {
+  .demo-body h2 {
     font-size: 2em !important;
     margin-top: 32px !important;
     margin-bottom: 24px !important;
