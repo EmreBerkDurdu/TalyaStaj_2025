@@ -23,9 +23,6 @@
             <div id="sonuc"></div>
         </div>
     </div>
-    <div id="mobil-uyari" style="display:none; color:#007bff; font-weight:bold; margin-bottom:12px;">
-      Mobil görünüm aktif!
-    </div>
     <script>
     const users = [
         { email: "ali@ornek.com", sifre: "1234", ad: "Ali Veli", rol: "musteri" },
@@ -44,9 +41,6 @@
             sonucDiv.innerHTML = `<div class="error">Giriş başarısız</div>`;
         }
     };
-    if (window.innerWidth <= 600) {
-      document.getElementById('mobil-uyari').style.display = 'block';
-    }
     </script>
 </body>
 </html> 
