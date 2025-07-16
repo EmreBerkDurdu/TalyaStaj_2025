@@ -173,7 +173,7 @@ footer {
 } 
 
 @media (max-width: 600px) {
-  .demo-card {
+  .demo-body .demo-card {
     min-width: 100vw;
     max-width: 100vw;
     width: 100vw;
@@ -182,7 +182,7 @@ footer {
     box-sizing: border-box;
     border-radius: 0;
   }
-  .demo-users {
+  .demo-body .demo-users {
     min-width: 98vw;
     max-width: 100vw;
     font-size: 1.22em;
@@ -190,8 +190,8 @@ footer {
     box-sizing: border-box;
     border-radius: 0;
   }
-  .demo-card input[type="email"],
-  .demo-card input[type="password"] {
+  .demo-body .demo-card input[type="email"],
+  .demo-body .demo-card input[type="password"] {
     font-size: 1.22em;
     padding: 18px;
     width: 96vw;
@@ -199,7 +199,7 @@ footer {
     margin-right: 2vw;
     box-sizing: border-box;
   }
-  .button-link {
+  .demo-body .button-link {
     font-size: 1.22em;
     min-width: 0;
     width: 96vw;
