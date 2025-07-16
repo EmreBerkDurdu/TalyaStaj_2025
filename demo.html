@@ -6,26 +6,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="demo-body">
-    <h2 style="color:#fff; margin-top: 64px; margin-bottom: 40px; font-size: 2.4em; font-family: 'Segoe UI', Arial, sans-serif; font-weight: 700; letter-spacing: 1px; text-align: center;">Demo Giriş Ekranı</h2>
-    <div class="demo-users">
-        <b>Örnek Giriş Bilgileri:</b><br>
-        <span>Müşteri: ali@ornek.com / 1234</span><br>
-        <span>Personel: ayse@otel.com / 5678</span><br>
-        <span>Yönetici: mehmet@otel.com / 9999</span>
-    </div>
-    <div class="demo-card">
-        <form id="loginForm">
-            <input type="email" name="email" placeholder="E-posta" required>
-            <input type="password" name="sifre" placeholder="Şifre" required>
-            <button type="submit" class="button-link" style="margin-top:10px; width:100%;">Giriş Yap</button>
-        </form>
-        <div id="sonuc"></div>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh;">
+        <h2 style="color:#fff; margin: 24px 0 24px 0; font-size: 2.4em; font-family: 'Segoe UI', Arial, sans-serif; font-weight: 700; letter-spacing: 1px; text-align: center;">Demo Giriş Ekranı</h2>
+        <div class="demo-users">
+            <b>Örnek Giriş Bilgileri:</b><br>
+            <span>Müşteri: ali@ornek.com / 1234</span><br>
+            <span>Personel: ayse@otel.com / 5678</span><br>
+            <span>Yönetici: mehmet@otel.com / 9999</span>
+        </div>
+        <div class="demo-card">
+            <form id="loginForm">
+                <input type="email" name="email" placeholder="E-posta" required>
+                <input type="password" name="sifre" placeholder="Şifre" required>
+                <button type="submit" class="button-link" style="margin-top:10px; width:100%;">Giriş Yap</button>
+            </form>
+            <div id="sonuc"></div>
+        </div>
     </div>
     <script>
     const users = [
-        { email: "ali@ornek.com", sifre: "1234", ad: "Ali ", rol: "müşteri" },
-        { email: "ayse@otel.com", sifre: "5678", ad: "Ayşe ", rol: "personel" },
-        { email: "mehmet@otel.com", sifre: "9999", ad: "Mehmet ", rol: "yönetici" }
+        { email: "ali@ornek.com", sifre: "1234", ad: "Ali Veli", rol: "musteri" },
+        { email: "ayse@otel.com", sifre: "5678", ad: "Ayşe Personel", rol: "personel" },
+        { email: "mehmet@otel.com", sifre: "9999", ad: "Mehmet Yönetici", rol: "yonetici" }
     ];
     document.getElementById('loginForm').onsubmit = function(e) {
         e.preventDefault();

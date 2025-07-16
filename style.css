@@ -63,10 +63,11 @@ h3 {
     margin-bottom: 24px;
 }
 
+/* Buton grubu için ortak stil */
 .button-group {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 12px;
     margin: 20px 0;
 }
@@ -74,7 +75,7 @@ h3 {
 .button-link {
     display: flex;
     align-items: center;
-    background: #23272f;
+    background: #007bff;
     color: #fff !important;
     padding: 10px 18px;
     border-radius: 8px;
@@ -85,14 +86,11 @@ h3 {
     transition: background 0.2s;
     border: none;
     margin: 0;
-    justify-content: center; 
+    justify-content: center;
     min-width: 220px;
 }
-.button-link:first-child {
-    background: #000000;
-}
 .button-link:hover {
-    background: #000000;
+    background: #0056b3;
     color: #fff !important;
 }
 .button-link .icon {
@@ -122,6 +120,37 @@ footer {
     padding-top: 12px;
 } 
 
+.demo-card {
+    background: #fff;
+    padding: 32px 28px 24px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.demo-card input[type="email"],
+.demo-card input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+.success {
+    color: #219150;
+    margin-top: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.error {
+    color: #c0392b;
+    margin-top: 16px;
+    font-weight: bold;
+    text-align: center;
+}
 .demo-users {
     background: #fff;
     color: #222;
@@ -141,50 +170,4 @@ footer {
     margin-top: 2px;
     font-family: 'Consolas', 'Menlo', monospace;
     font-size: 0.98em;
-} 
-
-@media (max-width: 600px) {
-  .demo-body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background: linear-gradient(120deg, #2980b9, #8e44ad);
-  }
-  .demo-card {
-    min-width: 99vw;
-    max-width: 99vw;
-    width: 99vw;
-    margin-top: 32px;
-    padding: 18px 1vw 18px 1vw;
-    box-sizing: border-box;
-  }
-  .demo-users {
-    min-width: 97vw;
-    max-width: 99vw;
-    font-size: 1.15em;
-    padding: 10px 1vw;
-    box-sizing: border-box;
-  }
-  .demo-card input[type="email"],
-  .demo-card input[type="password"] {
-    font-size: 1.18em;
-    padding: 16px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .button-link {
-    font-size: 1.22em;
-    min-width: 0;
-    width: 100%;
-    padding: 16px 0;
-  }
-  .demo-body h2 {
-    font-size: 2em !important;
-    margin-top: 32px !important;
-    margin-bottom: 24px !important;
-  }
 } 
