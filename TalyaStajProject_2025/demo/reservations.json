@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "musteriId": 1,
+    "odaNo": 101,
+    "girisTarihi": "2024-07-01",
+    "cikisTarihi": "2024-07-05",
+    "durum": "aktif"
+  },
+  {
+    "id": 2,
+    "musteriId": 1,
+    "odaNo": 102,
+    "girisTarihi": "2024-06-10",
+    "cikisTarihi": "2024-06-15",
+    "durum": "iptal"
+  }
+] 

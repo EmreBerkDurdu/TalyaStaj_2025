@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Giriş Ekranı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Demo Giriş Ekranı</h2>
+    <form id="loginForm">
+        <input type="email" name="email" placeholder="E-posta" required><br>
+        <input type="password" name="sifre" placeholder="Şifre" required><br>
+        <button type="submit" class="button-link" style="margin-top:10px;">Giriş Yap</button>
+    </form>
+    <div id="sonuc"></div>
+    <script>
+    const users = [
+        { email: "ali@ornek.com", sifre: "1234", ad: "Ali Veli", rol: "musteri" },
+        { email: "ayse@otel.com", sifre: "5678", ad: "Ayşe Personel", rol: "personel" },
+        { email: "mehmet@otel.com", sifre: "9999", ad: "Mehmet Yönetici", rol: "yonetici" }
+    ];
+
+    document.getElementById('loginForm').onsubmit = function(e) {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const sifre = e.target.sifre.value;
+        const sonucDiv = document.getElementById('sonuc');
+        const kullanici = users.find(u => u.email === email && u.sifre === sifre);
+        if (kullanici) {
+            sonucDiv.innerText = `Hoşgeldin ${kullanici.ad} (${kullanici.rol})`;
+        } else {
+            sonucDiv.innerText = "Giriş başarısız";
+        }
+    };
+    </script>
+</body>
+</html>

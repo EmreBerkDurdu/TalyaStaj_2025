@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "ad": "Ali Veli",
+    "email": "ali@ornek.com",
+    "sifre": "1234",
+    "rol": "musteri"
+  },
+  {
+    "id": 2,
+    "ad": "Ayşe Personel",
+    "email": "ayse@otel.com",
+    "sifre": "5678",
+    "rol": "personel"
+  },
+  {
+    "id": 3,
+    "ad": "Mehmet Yönetici",
+    "email": "mehmet@otel.com",
+    "sifre": "9999",
+    "rol": "yonetici"
+  }
+] 
