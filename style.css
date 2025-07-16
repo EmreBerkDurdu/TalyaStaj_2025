@@ -171,3 +171,39 @@ footer {
     font-family: 'Consolas', 'Menlo', monospace;
     font-size: 0.98em;
 } 
+
+@media (max-width: 600px) {
+  .demo-card {
+    min-width: 98vw;
+    max-width: 99vw;
+    width: 98vw;
+    margin-top: 16px;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  .demo-users {
+    min-width: 95vw;
+    max-width: 99vw;
+    font-size: 1.15em;
+    padding: 12px 1vw;
+    box-sizing: border-box;
+  }
+  .demo-card input[type="email"],
+  .demo-card input[type="password"] {
+    font-size: 1.18em;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .button-link {
+    font-size: 1.18em;
+    min-width: 0;
+    width: 100%;
+    padding: 16px 0;
+  }
+  .demo-body h2 {
+    font-size: 2em !important;
+    margin-top: 24px !important;
+    margin-bottom: 20px !important;
+  }
+} 
