@@ -145,24 +145,30 @@ footer {
 
 @media (max-width: 600px) {
   .demo-card {
-    min-width: 90vw;
-    max-width: 98vw;
-    padding: 18px 6vw 18px 6vw;
+    min-width: 98vw;
+    max-width: 99vw;
+    width: 98vw;
+    padding: 18px 2vw 18px 2vw;
+    box-sizing: border-box;
   }
   .demo-users {
-    min-width: 80vw;
-    font-size: 1.08em;
-    padding: 10px 4vw;
+    min-width: 95vw;
+    max-width: 98vw;
+    font-size: 1.12em;
+    padding: 10px 2vw;
+    box-sizing: border-box;
   }
   .demo-card input[type="email"],
   .demo-card input[type="password"] {
-    font-size: 1.1em;
-    padding: 12px;
+    font-size: 1.15em;
+    padding: 14px;
+    width: 100%;
+    box-sizing: border-box;
   }
   .button-link {
-    font-size: 1.15em;
+    font-size: 1.18em;
     min-width: 0;
     width: 100%;
-    padding: 12px 0;
+    padding: 14px 0;
   }
 } 
