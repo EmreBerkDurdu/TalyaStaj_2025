@@ -121,3 +121,24 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.12);
     padding-top: 12px;
 } 
+
+.demo-users {
+    background: #fff;
+    color: #222;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    font-size: 1em;
+    text-align: left;
+    min-width: 260px;
+}
+.demo-users b {
+    color: #007bff;
+}
+.demo-users span {
+    display: block;
+    margin-top: 2px;
+    font-family: 'Consolas', 'Menlo', monospace;
+    font-size: 0.98em;
+} 
