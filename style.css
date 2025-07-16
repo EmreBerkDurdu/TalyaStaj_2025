@@ -142,3 +142,27 @@ footer {
     font-family: 'Consolas', 'Menlo', monospace;
     font-size: 0.98em;
 } 
+
+@media (max-width: 600px) {
+  .demo-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 18px 6vw 18px 6vw;
+  }
+  .demo-users {
+    min-width: 80vw;
+    font-size: 1.08em;
+    padding: 10px 4vw;
+  }
+  .demo-card input[type="email"],
+  .demo-card input[type="password"] {
+    font-size: 1.1em;
+    padding: 12px;
+  }
+  .button-link {
+    font-size: 1.15em;
+    min-width: 0;
+    width: 100%;
+    padding: 12px 0;
+  }
+} 
