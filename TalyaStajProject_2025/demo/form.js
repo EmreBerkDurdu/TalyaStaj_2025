@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Flatpickr başlat
   if (window.flatpickr) {
     flatpickr('#date', {
       dateFormat: 'd.m.Y',

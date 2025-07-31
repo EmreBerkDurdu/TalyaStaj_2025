@@ -68,6 +68,4 @@ app.post('/spa-rezervasyon', (req, res) => {
   res.json({ mesaj: 'Rezervasyon başarıyla oluşturuldu!', reservation: newReservation });
 });
 
-app.listen(PORT, () => {
-  console.log(`Demo sunucu çalışıyor: http://localhost:${PORT}`);
-}); 
+app.listen(PORT); 
