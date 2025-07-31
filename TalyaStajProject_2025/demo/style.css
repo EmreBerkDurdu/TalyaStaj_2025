@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    background: linear-gradient(120deg, #f5eee6 0%, #e6d3b3 50%, #a67c52 100%);
     background-size: 400% 400%;
     animation: gradientFlow 18s ease-in-out infinite;
     min-height: 100vh;
@@ -24,166 +24,181 @@ body {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 40px 32px 32px 32px;
-    border-radius: 18px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    background: rgba(255, 255, 255, 0.92);
+    padding: 48px 32px 36px 32px;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px 0 rgba(166, 124, 82, 0.18), 0 2px 8px 0 rgba(0,0,0,0.08);
     margin-top: 40px;
     min-width: 340px;
-    max-width: 400px;
-    width: 90vw;
+    max-width: 420px;
+    width: 95vw;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    color: #3a7ca5;
+    color: #a67c52;
     font-family: 'Segoe UI', 'Arial', sans-serif;
-    font-size: 2.2rem;
-    margin-bottom: 24px;
+    font-size: 2.1rem;
+    margin-bottom: 28px;
     letter-spacing: 1px;
     text-align: center;
+    font-weight: 700;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 18px;
     background: transparent;
     padding: 0;
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 label {
-    color: #3a7ca5;
-    font-weight: 500;
-    margin-bottom: 2px;
+    color: #a67c52;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 1.08em;
+    letter-spacing: 0.5px;
 }
 
 input, select {
-    margin: 0 0 10px 0;
-    padding: 10px;
+    margin: 0 0 0 0;
+    padding: 12px 14px 12px 40px;
     width: 100%;
     border-radius: 8px;
-    border: 1px solid #b2bec3;
+    border: 1.5px solid #e6d3b3;
     background: #f8fafc;
-    font-size: 1rem;
+    font-size: 1.08em;
     transition: border 0.2s;
     box-sizing: border-box;
-}
-
-input:focus, select:focus {
-    border: 1.5px solid #3a7ca5;
     outline: none;
+    color: #222;
+    position: relative;
 }
-
+input:focus, select:focus {
+    border: 1.5px solid #a67c52;
+    background: #f5eee6;
+}
+input::placeholder {
+    color: #bca27a;
+    opacity: 1;
+    font-size: 0.98em;
+}
+select {
+    color: #7c5a36;
+    font-weight: 500;
+}
 button {
-    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    background: linear-gradient(90deg, #e6d3b3 0%, #a67c52 100%);
     color: #fff;
     border: none;
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 1.1rem;
-    font-weight: 600;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 1.18rem;
+    font-weight: 700;
     cursor: pointer;
     transition: background 0.2s, transform 0.1s;
-    margin-top: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(166, 124, 82, 0.10);
+    letter-spacing: 0.5px;
 }
-
 button:hover {
-    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+    background: linear-gradient(90deg, #a67c52 0%, #7c5a36 100%);
     transform: translateY(-2px) scale(1.03);
 }
-
 #result {
     margin-top: 18px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.13rem;
     text-align: center;
     min-height: 24px;
+    border-radius: 8px;
+    padding: 8px 0;
+    background: none;
 }
-
-
+#result[style*="green"] {
+    background: #e6f5ea;
+    color: #219150;
+}
+#result[style*="red"] {
+    background: #fbeaea;
+    color: #c0392b;
+}
+input[name="name"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
+input[name="surname"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
+input[name="phone"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C7.61 22 2 16.39 2 9.5a1 1 0 0 1 1-1H6.5a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
+input[name="email"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.83l7.88 7.88a1 1 0 0 0 1.41 0L20 8.83V18H4z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
+input[name="date"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
+input[name="time"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 8v5h5v-2h-3V8z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
+select[name="service"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
 .flatpickr-calendar {
-    background: #23272f !important;
+    background: #f5eee6 !important;
     border: none !important;
-    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18) !important;
-    color: #e0e6ed !important;
+    box-shadow: 0 8px 32px 0 rgba(166,124,82,0.18) !important;
+    color: #7c5a36 !important;
     font-family: 'Segoe UI', 'Arial', sans-serif;
 }
 .flatpickr-months {
-    background: #23272f !important;
-    color: #4ec3fa !important;
+    background: #f5eee6 !important;
+    color: #a67c52 !important;
 }
 .flatpickr-monthDropdown-months, .flatpickr-current-month, .flatpickr-current-month input {
-    color: #4ec3fa !important;
+    color: #a67c52 !important;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .flatpickr-weekdays {
-    background: #23272f !important;
+    background: #f5eee6 !important;
 }
 .flatpickr-weekday {
-    color: #4ec3fa !important;
+    color: #a67c52 !important;
     font-weight: 600;
 }
 .flatpickr-day {
     background: transparent !important;
-    color: #e0e6ed !important;
+    color: #7c5a36 !important;
     border-radius: 8px !important;
+    border: 1px solid #e6d3b3 !important;
     transition: background 0.2s, color 0.2s;
 }
 .flatpickr-day:hover, .flatpickr-day:focus {
-    background: #2d3748 !important;
-    color: #4ec3fa !important;
+    background: #e6d3b3 !important;
+    color: #fff !important;
 }
 .flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.inRange {
-    background: #4ec3fa !important;
-    color: #23272f !important;
+    background: #a67c52 !important;
+    color: #fff !important;
     border-radius: 8px !important;
+    border: 1.5px solid #7c5a36 !important;
 }
 .flatpickr-day.today {
-    border-color: #4ec3fa !important;
+    border-color: #a67c52 !important;
 }
 .flatpickr-time {
-    background: #23272f !important;
-    border-top: 1px solid #333 !important;
+    background: #f5eee6 !important;
+    border-top: 1px solid #e6d3b3 !important;
 }
 .flatpickr-time input, .flatpickr-time .flatpickr-am-pm {
-    background: #23272f !important;
-    color: #4ec3fa !important;
+    background: #f5eee6 !important;
+    color: #a67c52 !important;
     border: none !important;
     font-size: 1.1em;
 }
 .flatpickr-time input:focus {
-    outline: 1.5px solid #4ec3fa !important;
+    outline: 1.5px solid #a67c52 !important;
 }
 .flatpickr-prev-month, .flatpickr-next-month {
-    color: #4ec3fa !important;
-    fill: #4ec3fa !important;
+    color: #a67c52 !important;
+    fill: #a67c52 !important;
     opacity: 1 !important;
 }
 .flatpickr-calendar.arrowTop:before, .flatpickr-calendar.arrowTop:after {
-    border-bottom-color: #23272f !important;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 18px 6vw 18px 6vw;
-        min-width: unset;
-        max-width: 98vw;
-        margin-top: 10vw;
-    }
-    h1 {
-        font-size: 1.3rem;
-        margin-bottom: 16px;
-    }
-    input, select, button {
-        font-size: 0.98rem;
-        padding: 9px;
-    }
-    label {
-        font-size: 0.98rem;
-    }
+    border-bottom-color: #f5eee6 !important;
 } 
