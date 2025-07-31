@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    </div>
     <div class="welcome-container">
-        <div class="welcome-icon">&#9775;</div>
-        <h1 id="typewriter"></h1>
+        <div class="welcome-icon">
+            <!-- Ying Yang SVG -->
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="30" fill="#fff" stroke="#222" stroke-width="4"/>
+                <path d="M32 2
+                    a30 30 0 0 1 0 60
+                    a15 15 0 0 0 0 -30
+                    a15 15 0 0 1 0 -30" fill="#23272f"/>
+                <circle cx="32" cy="17" r="5" fill="#23272f"/>
+                <circle cx="32" cy="47" r="5" fill="#fff" stroke="#23272f" stroke-width="2"/>
+            </svg>
+        </div>
+        <h1>Hoş Geldiniz!</h1>
         <h2>Talya Staj Projesi</h2>
-        <p>SPA rezervasyon sistemi</p>
+        <p>SPA rezervasyon sistemi - modern, mobil uyumlu ve kullanıcı dostu!</p>
         <div class="button-group">
-            <a href="demo.html" class="button-link"><span class="icon">➡️</span>Demo'yu Dene</a>
+            <a href="TalyaStajProject_2025/demo/" class="button-link"><span class="icon">➡️</span>Demo'yu Dene</a>
             <a href="https://github.com/EmreBerkDurdu/TalyaStaj_2025" class="button-link" target="_blank" rel="noopener noreferrer"><span class="icon">➡️</span>GitHub Repo</a>
         </div>
         <div class="tech-tags">
@@ -30,18 +40,5 @@
             © 2025 Talya Staj Projesi - Tüm hakları saklıdır.
         </footer>
     </div>
-    <script>
-const başlık = "Hoş Geldiniz!";
-let i = 0;
-const hiz = 120;
-function typeWriter() {
-    if (i < başlık .length) {
-        document.getElementById("typewriter").innerHTML += başlık.charAt(i);
-        i++;
-        setTimeout(typeWriter, hiz);
-    }
-}
-window.onload = typeWriter;
-</script>
 </body>
 </html> 

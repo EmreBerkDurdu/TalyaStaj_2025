@@ -1,12 +1,26 @@
 body {
-    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    background-size: 400% 400%;
+    animation: gradientFlow 18s ease-in-out infinite;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container {
@@ -90,7 +104,7 @@ button:hover {
     min-height: 24px;
 }
 
-/* Flatpickr koyu ve mavi vurgulu özel tema */
+
 .flatpickr-calendar {
     background: #23272f !important;
     border: none !important;
