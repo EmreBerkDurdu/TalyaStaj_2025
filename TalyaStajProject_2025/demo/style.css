@@ -136,7 +136,7 @@ input[name="surname"] { background-image: url('data:image/svg+xml;utf8,<svg fill
 input[name="phone"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C7.61 22 2 16.39 2 9.5a1 1 0 0 1 1-1H6.5a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
 input[name="email"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.83l7.88 7.88a1 1 0 0 0 1.41 0L20 8.83V18H4z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
 input[name="date"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
-input[name="time"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 8v5h5v-2h-3V8z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
+input[name="time"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="%23a67c52" stroke-width="2" fill="%23fffbe6"/><line x1="12" y1="12" x2="12" y2="7" stroke="%23a67c52" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="12" x2="16" y2="12" stroke="%23a67c52" stroke-width="2" stroke-linecap="round"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
 select[name="service"] { background-image: url('data:image/svg+xml;utf8,<svg fill="%23a67c52" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); background-repeat: no-repeat; background-position: 12px center; }
 .flatpickr-calendar {
     background: #f5eee6 !important;
@@ -201,4 +201,19 @@ select[name="service"] { background-image: url('data:image/svg+xml;utf8,<svg fil
 }
 .flatpickr-calendar.arrowTop:before, .flatpickr-calendar.arrowTop:after {
     border-bottom-color: #f5eee6 !important;
+} 
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input[type="time"]::-webkit-input-placeholder {
+  color: #a67c52;
+}
+input[type="time"]::-moz-placeholder {
+  color: #a67c52;
+}
+input[type="time"]:-ms-input-placeholder {
+  color: #a67c52;
+}
+input[type="time"]::placeholder {
+  color: #a67c52;
 } 

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function() {
   if (window.flatpickr) {
     flatpickr('#date', {
       dateFormat: 'd.m.Y',
@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
     resultDiv.textContent = '';
-
     const data = {
       name: form.name.value.trim(),
       surname: form.surname.value.trim(),
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
       time: form.time.value,
       service: form.service.value
     };
-
     try {
       const response = await fetch('/spa-rezervasyon', {
         method: 'POST',

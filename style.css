@@ -62,18 +62,18 @@ body {
 h1 {
     margin: 0 0 8px 0;
     font-size: 2.2rem;
-    color: #fff;
+    color: #ffffff;
 }
 
 h2 {
     margin: 0 0 16px 0;
     font-size: 1.2rem;
-    color: #e0e0e0;
+    color: #ffffff;
     font-weight: 400;
 }
 
 p {
-    color: #f3f3f3;
+    color: #ffffff;
     margin-bottom: 24px;
 }   
 
@@ -82,7 +82,7 @@ h3 {
     margin-bottom: 24px;
 }
 
-/* Buton grubu için ortak stil */
+
 .button-group {
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@ h3 {
 }
 .tech-tags span {       
     display: inline-block;
-    background: rgba(13, 154, 236, 0.253);
+    background: #b39a6f;
     color: #ffffff;
     border-radius: 40px 0 40px 0;
     padding: 6px 16px 6px 16px;
